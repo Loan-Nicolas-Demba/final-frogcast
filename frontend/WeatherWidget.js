@@ -1257,7 +1257,7 @@ class WeatherWidget extends HTMLElement {
    */
   async getField(field) {
     const response = await fetch(
-      `https://frogcastproxy.onrender.com/forecast?latitude=${this.latitude}&longitude=${this.longitude}&fields=${field}&widgetToken=${this.widgetToken}`
+      `https://final-frogcast.onrender.com//forecast?latitude=${this.latitude}&longitude=${this.longitude}&fields=${field}&widgetToken=${this.widgetToken}`
     );
     console.log(response);
     if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
